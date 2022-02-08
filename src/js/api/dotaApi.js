@@ -1,10 +1,10 @@
 const URL = 'https://api.opendota.com/api';
 
-import { apiServices } from './apiServices';
+import { apiService } from './apiService';
 
 export const getHeroesList = () => {
-  return apiServices(`${URL}/heroes`);
+  return apiService(`${URL}/heroes`);
 };
-export const getHeroesById = id => {
-  return apiServices(`${URL}/heroes/${id}`);
+export const getHeroById = id => {
+  return apiService(`${URL}/heroes/${id}`);
 };

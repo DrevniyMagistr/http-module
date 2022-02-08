@@ -11,7 +11,6 @@ const renderHeroes = template => {
 getHeroesList()
   .then(heroes => {
     const heroesTemplate = createHeroesList(heroes);
-
     renderHeroes(heroesTemplate);
   })
   .catch(error => console.log(error));
